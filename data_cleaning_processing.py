@@ -11,12 +11,9 @@ fpath = 'Example_Data.xlsx'
 df_Data = pd.read_excel(fpath, sheet_name='Example_Data', header=1)  # head at line 1
 df_DB = pd.read_excel(fpath, sheet_name='Example_DB', header=0)  # head at line 1
 
-
-
 Data_Company_ID = df_Data.iloc[:, 0]  # [1:]tolist()
 Data_Company_Name = df_Data.iloc[:, 1]
 
-# DB_Company_ID = df_Data.iloc[:, 0]
 
 ############################
 ### task1  Data cleaning ###
@@ -63,6 +60,7 @@ for i in range(1, len(df_Data.index)):
 
 print('df_data_cleaning')
 print(df_data_cleaning)
+
 
 ################################
 ### task 2  Data processing  ###
@@ -116,9 +114,6 @@ print('df_data_processing')
 print(df_data_processing)
 
 
-###############################
-### task 3  Data comparison ###
-###############################
 
 
 
